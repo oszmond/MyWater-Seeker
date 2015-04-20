@@ -1,0 +1,172 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!doctype html>
+<html>
+<head>
+	<title>Find you water now</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<!--web-font-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script:400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Karma:400,300' rel='stylesheet' type='text/css'>
+	<!--//web-font-->
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Viatges Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- //Custom Theme files -->
+	<!-- js -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<!-- //js -->	
+	<!-- start-smoth-scrolling-->
+	<script type="text/javascript">
+		function calcular(){
+		var water = document.getElementById('water').value;
+		var people = document.getElementById('people').value;
+		var result = 0;
+		result=water/people*2;
+		document.getElementById("result").innerHTML = "result";
+		}
+	</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!--//end-smoth-scrolling-->
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-logo">
+				<a href="index.html"><h1>MyWaterSeeker</h1></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> </span>
+				<ul class="nav1">
+					<li><a href="index.html" class="active">Water Map</a></li>					
+					<li><a href="#ancla">Water resources</a></li>					
+				</ul>
+				<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.nav1" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+			<div class="clearfix"> </div>
+		</div>	
+	</div>
+	<!--//header-->	
+	<!--banner-->
+	<div class="banner">
+		<div class="container">
+			<div class="search">
+				<form>
+					<input type="text" value="Search Here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here';}" required="">
+					<input type="submit" value="">
+				</form>	
+			
+			</div>
+			<div class="message-bottom">
+				<h3>Find your water</h3>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14661.619472534321!2d-106.375826!3d23.2647341!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1428832352441"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--trip-->
+	<div class="trip">
+		<div class="container">
+			<div class="row" id="ancla">
+				<div class="col-sm-4">
+					<h4>Water Founded</h4>
+					<form id="waterform">
+					<select id="water">
+						<option value="0">Select</option>
+						<option value="1000">Juarez River</option>
+						<option value="2000">Swan Lake</option>
+						<option value="100">Water Hole 1</option>
+					</select>
+					</form>
+				</div>
+				<div class="col-sm-4">
+					<h4>People number</h4>
+					<form id="peopleform">
+					<select id="people">
+						<option value="0">Select</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="10">10</option>
+						<option value="100">100</option>
+						<option value="1000">1000</option>
+					</select>
+					</form>
+				</div>
+				<div class="col-sm-4">
+				<form id="butonform">
+					<input type="button" value="Calculate time of using" onclick="calcular()"></input><br><br><br>
+					<input type="text" id="result" disabled="true" value=""></input>
+				</div>
+				</form>
+			</div>
+		
+			
+			
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//trip-->
+	<div class="map">
+		<img src="images/map.jpg" alt="map"/>
+	</div>
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<p>© 2015 All rights reserved | Template by <a href="http://w3layouts.com/"> W3layouts</a></p>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			$().UItoTop({ easingType: 'easeOutQuart' });	
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->	
+</body>
+</html>	
